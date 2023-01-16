@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap" rel="stylesheet"> 
+    <title>Basketball Score App</title>
+</head>
+<body>
+    <main id="main-wrapper">
+
+        <div id="home_score" class="flex-col">
+            <h1 class="team-name">HOME</h1>
+            <div class="score">
+                <!-- Score goes here -->
+                <h1 id="home-points">0</h1>
+            </div>
+            <!-- Points will be three divs within a div -->
+            <div id="add-points-wrapper">
+                <button type="submit" id="home-one">+1</button>
+                <button type="submit" id="home-two">+2</button>
+                <button type="submit" id="home-three">+3</button>
+            </div>
+        </div>
+
+        <div class="quarter-section">
+            <div id="quarters">
+                <h3 id="quarter">QTR:</h3>
+                <button type="submit" id="quarter-btn">+QTR</button>
+            </div>
+
+            <button type="submit" id="reset-btn">RESET SCORES</button>
+            <button type="submit" id="reset-qtrs">RESET QUARTERS</button>
+
+
+        </div>
+
+        <div id="guest_score" class="flex-col">
+            <h1 class="team-name">GUEST</h1>
+            <div class="score">
+                <!-- Score goes here -->
+                <h1 id="guest-points">0</h1>
+            </div>
+            <!-- Points will be three divs within a div -->
+            <div id="add-points-wrapper">
+                <button type="submit" id="guest-one">+1</button>
+                <button type="submit" id="guest-two">+2</button>
+                <button type="submit" id="guest-three">+3</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="/index.js"></script>
+</body>
+</html>
